@@ -1,6 +1,6 @@
 {
-  "name": "AdBlock Extension",
-  "description": "AdBlock extension in TypeScript!",
+  "name": "SWERVE",
+  "description": "Servco Web Event Reference Visualizer",
   "version": "1.0.0",
   "manifest_version": 3,
   "icons": {

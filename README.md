@@ -1,4 +1,4 @@
-# React Chrome Extension Boilerplate
+# SWERVE - Servco Web Event Reference Visualizer
 
 ## Getting Started
 

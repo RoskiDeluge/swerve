@@ -1,7 +1,7 @@
 {
-  "name": "adblock-chrome-extension",
+  "name": "swerve-chrome-extension",
   "version": "1.0.0",
-  "description": "adblock chrome extension",
+  "description": "swerve chrome extension",
   "scripts": {
     "start": "webpack --watch --progress --config webpack.dev.js",
     "build": "webpack --watch --progress --config webpack.prod.js"

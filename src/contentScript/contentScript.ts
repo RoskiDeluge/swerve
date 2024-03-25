@@ -1,3 +1,6 @@
+/* TODO: write functions that check for regex matches on servcotoyota.com class or id selectors and add a span 
+with info about the GA4 event for that element */
+
 const rules: {
     [url: string]: () => void
 } = {
@@ -5,14 +8,16 @@ const rules: {
     filterNYT2,
 }
 
+// ad blocker function 
 function filterNYT () {
     const app = document.getElementsByClassName("ad dfp-ad-top-wrapper css-rfqw0c")[0];
     const wrapper = document.getElementById("dfp-ad-top");
-    if (app && wrapper) {
+    if (app && wrapper) { 
       app.removeChild(wrapper);
     }
 }
 
+// regex match function
 function filterNYT2() {
     const aTags = document.getElementsByTagName('a')
     // for (const div of divs) {
@@ -25,15 +30,24 @@ function filterNYT2() {
     //     tag.textContent = "hello world!"
     // }
 
+    // for (const tag of aTags) {
+    //     if (tag.textContent.includes("i")) {
+    //         tag.style.backgroundColor = "yellow"
+    //     }
+    // }
+
     for (const tag of aTags) {
-        if (tag.textContent.includes("i")) {
-            tag.style.backgroundColor = "yellow"
+        if (/\b(The|the)(?!\w)/i.test(tag.textContent)) {
+            const span = document.createElement("span");
+            span.textContent = "S-the-content";
+            span.style.backgroundColor = "yellow"
+            tag.appendChild(span);
         }
     }
 }
 
 if (document.URL in rules) {
-    console.log(document.URL)
+    console.log("Filtered URL:", document.URL)
     rules[document.URL]()
 }
 
