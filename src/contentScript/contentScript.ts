@@ -1,5 +1,5 @@
 /* TODO: write functions that check for regex matches on servcotoyota.com class or id selectors and add a span 
-with info about the GA4 event for that element */
+on elements that fire the GAEvent */
 
 const rules: {
     [url: string]: () => void
@@ -47,7 +47,7 @@ function filterNYT2() {
 }
 
 if (document.URL in rules) {
-    console.log("Filtered URL:", document.URL)
+    // console.log("Filtered URL:", document.URL)
     rules[document.URL]()
 }
 

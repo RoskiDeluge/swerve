@@ -1,4 +1,4 @@
-# SWERVE - Servco Web Event Reference Visualizer
+# SWERVE - Servco Web Event Resource Visualizer
 
 ## Getting Started
 
