@@ -1,0 +1,1 @@
+(()=>{const t={"https://www.nytimes.com/":function(){const t=document.getElementsByTagName("a");for(const e of t)if(/\b(The|the)(?!\w)/i.test(e.textContent)){const t=document.createElement("span");t.textContent="S-the-content",t.style.backgroundColor="yellow",e.appendChild(t)}}};document.URL in t&&(console.log("Filtered URL:",document.URL),t[document.URL]())})();
