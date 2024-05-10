@@ -1,0 +1,1 @@
+{"version":3,"file":"background.js","mappings":";;;;;AAAA;AACA;AACA","sources":["webpack://swerve-chrome-extension/./src/background/background.ts"],"sourcesContent":["// chrome.runtime.onInstalled.addListener(() => { \n//     // Todo\n// })\n"],"names":[],"sourceRoot":""}
