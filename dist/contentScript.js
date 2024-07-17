@@ -43,7 +43,7 @@ function filterServcoHomePage() {
         p.style.backgroundColor = "yellow";
         scheduleService.appendChild(p);
     }
-    // Sample conditionals:
+    // Sample for loops to iterate over arrays of tags:
     // for (const div of divs) {
     //     if (div.className.indexOf('ad') != -1) {
     //         div.style.display = 'none'
@@ -58,7 +58,10 @@ function filterServcoHomePage() {
     //     }
     // }
 }
-// ad blocker function 
+/*
+ad blocker function (can be added to rules object above like this:
+'https://www.nytimes.com/': filterNYT)
+*/
 // function filterNYT () {
 //     const app = document.getElementsByClassName("ad dfp-ad-top-wrapper css-rfqw0c")[0];
 //     const wrapper = document.getElementById("dfp-ad-top");
