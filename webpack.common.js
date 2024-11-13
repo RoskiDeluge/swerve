@@ -42,10 +42,10 @@ module.exports = {
         },
       ],
     }),
-    // ...getHtmlPlugins([
-    //   'popup',
-    //   'options'
-    // ]),
+    ...getHtmlPlugins([
+      'popup',
+      'options'
+    ]),
   ],
   output: {
     filename: "[name].js",
