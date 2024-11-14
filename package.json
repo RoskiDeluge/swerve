@@ -1,6 +1,6 @@
 {
   "name": "swerve-chrome-extension",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "swerve chrome extension",
   "scripts": {
     "start": "webpack --watch --progress --config webpack.dev.js",
