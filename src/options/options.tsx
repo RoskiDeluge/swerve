@@ -5,7 +5,8 @@ import './options.css'
 const App: React.FC<{}> = () => {
   return (
     <div>
-      <img src="icon.png" />
+      <h1>GAEvent Log:</h1>
+      <p>List of all dataLayer GAEvents: ...</p>
     </div>
   )
 }
